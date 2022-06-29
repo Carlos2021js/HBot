@@ -2,7 +2,7 @@
   "Version": "2.0.0",
   "ReleaseNotes": "Nova Atualização Disponível",
   "UrlUpdate": "https://raw.githubusercontent.com/Carlos2021js/HBot/main/README.md",
-  "Sms": "https://"",
+  "Sms": "https://github.com/Carlos2021js/generate-and-send-ssh-key/blob/master/README.md",
   "EmailFeedback: "",
   "UrlContato": "https://t.me/SOUZA3F",
   "UrlTermos": "Link de termos",
