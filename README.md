@@ -1,5 +1,5 @@
 {
-  "Version": "2.0.0",
+  "Version": "2.0.1",
   "ReleaseNotes": "Nova Atualização Disponível",
   "UrlUpdate": "https://raw.githubusercontent.com/Carlos2021js/HBot/main/README.md",
   "Sms": "https://github.com/Carlos2021js/generate-and-send-ssh-key/blob/master/README.md",
